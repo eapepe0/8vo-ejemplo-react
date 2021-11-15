@@ -6,14 +6,14 @@ export default function MainContent() {
   return (
     <section className="main-content">
       <h1 className="title">Razones por las cual quiero aprender React!</h1>
-      <ol className="list">
+      <ul className="list">
         <li className="list-item">
           Es una libreria popular, entonces me podria sentar con los cools!
         </li>
         <li className="list-item">
           Es mas probable conseguir trabajo como developer, si conozco React
         </li>
-      </ol>
+      </ul>
     </section>
   );
 }

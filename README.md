@@ -1,2 +1,6 @@
 # 8vo-ejemplo-react
-Created with CodeSandbox
+
+
+Aprendemos a importar
+
+Creamos una pagina estatica usando React

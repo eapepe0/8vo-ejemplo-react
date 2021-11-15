@@ -8,7 +8,8 @@ body {
   font-family: "Monserrat", sans-serif;
 }
 .container {
-  display: grid;
+  /* nuestro contenedor que ocupa toda la pantalla */
+  display: grid; /* grid */
   grid-template-columns: 1fr 0.8fr 1.2fr;
   grid-template-rows: 0.3fr 0.6fr 2.4fr 1.6fr 0.4fr;
   gap: 0px 0px;
@@ -18,49 +19,53 @@ body {
     "main-content main-content main-content"
     "main-content main-content main-content"
     "footer footer footer";
+  width: 100vw; /* todo el ancho */
+  height: 100vh; /* todo el alto */
 }
 .nav-logo {
+  /* achicamos el logo */
   width: 60px;
 }
 .encabezado {
+  /* encabezado grid */
   grid-area: encabezado;
 }
 .navbar {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #24252a;
+  width: 100%; /* ocupa todo el ancho */
+  display: flex; /* flex */
+  justify-content: space-between; /* repartimos el espacio */
+  align-items: center; /* alineamos */
+  background-color: #24252a; /* color de fondo oscuro */
 }
 .main-content {
-  grid-area: main-content;
-  height: 68vh;
+  grid-area: main-content; /* se llama main-content */
+  height: 68vh; /* ancho que ocpupa */
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
+  flex-direction: column; /* como si fuera una columna una arriba de la otra */
+  justify-content: space-around; /* dividimos los espacios */
+  align-items: center; /* centramos */
+  text-align: center; /* centramos el texto */
 }
 
 .title {
-  font-size: 3rem;
-  margin-top: 1rem;
+  font-size: 3rem; /* tamaño de titulo */
+  margin-top: 1rem; /* margen arriba */
 }
 
 .list-item {
-  margin-bottom: 3rem;
-  font-size: 1.1rem;
+  margin-bottom: 3rem; /* separacion entre cada item */
+  font-size: 1.1rem; /* tamaño de la fuente */
   font-weight: 600;
   font-style: italic;
 }
 .footer {
   grid-area: footer;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 10vh;
-  background-color: #24252a;
-  color: #fff;
+  display: flex; /* lo hacemos flex */
+  justify-content: space-around; /* dividimos el espacio */
+  align-items: center; /* centramos */
+  height: 10vh; /* ancho del footer */
+  background-color: #24252a; /* color oscuro */
+  color: #fff; /* letra clara */
   font-weight: 700;
   font-size: 1.3rem;
 }
